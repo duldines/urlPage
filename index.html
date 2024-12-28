@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User input</title>
+</head>
+
+<body>
+    <h1 id="h1Id">welcome</h1>
+    <label>User Name</label>
+
+    <input id="my text"> <br> <br>
+    <button id="mysubmit">Submit me</button>
+
+
+
+</body>
+<script>
+    let username;
+    document.getElementById("mysubmit").onclick = function() {
+        username = document.getElementById("my text").value;
+        document.getElementById("h1Id").textContent = 'Hi ${username}'
+
+    };
+</script>
+
+</html>
